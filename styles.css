@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #aed9e0; /* Fondo azul claro */
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+#contenedor-tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tarjeta {
+    border: 10px solid #c06c84; /* Borde rosa oscuro */
+    border-radius: 15px;
+    margin: 10px;
+    padding: 15px;
+    background-color: #f4d1dc; /* Fondo rosa claro */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    max-width: 400px; /* Ajusta según sea necesario */
+    width: 100%;
+    overflow: hidden; /* Evita que el contenido se desborde */
+    overflow-y: auto; /* Agregado para permitir desplazamiento vertical */
+}
+
+.tarjeta img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+/* Estilos para el botón */
+#crear-tarjeta-btn {
+    background-color: #1a5276; /* Fondo azul oscuro */
+    color: #fff; /* Texto blanco */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+#crear-tarjeta-btn:hover {
+    background-color: #154360; /* Cambio de color al pasar el ratón */
+}
+/* Estilos mejorados para el modal */
+/* Estilos mejorados para el modal */
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    max-width: 80%; /* Ancho máximo del modal */
+    text-align: center; /* Centra el contenido */
+    word-wrap: break-word; /* Envuelve palabras para evitar extensión horizontal */
+}
+
+
+.modal h2 {
+    margin-bottom: 10px;
+}
+
+.modal p {
+    margin-bottom: 20px;
+}
+
+.modal button {
+    background-color: #1a5276;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal button:hover {
+    background-color: #154360;
+}
+
+/* Estilos adicionales para el formulario de edición de tarjetas */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #1a5276;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #154360;
+}
+
+a#crear-tarjeta-btn {
+    background-color: #1a5276;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none; /* Evitar el subrayado del enlace */
+}
+
+a#crear-tarjeta-btn:hover {
+    background-color: #154360;
+}
+
